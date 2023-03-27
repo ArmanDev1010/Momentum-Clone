@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="text-white flex justify-center items-center min-h-screen">
+    <div class="text-center">
+        <div class="text-9xl tracking-wider mb-4" id="time"></div>
+        <div class="text-5xl mb-10">
+            <span id="good"></span>
+            <span contenteditable="true" class="outline-none" id="name"></span>
+        </div>
+        <div class="text-3xl" id="focusBox">
+            <div class="one">
+            <h2 class="mb-2">What is your main focus for today?</h2>
+            <input type="text" class="bg-transparent border-b-2 border-white outline-none w-full text-center" id="task">
+        </div>
+        </div>
+        <div class="two text-3xl flex justify-center items-center gap-10">
+            <div class="flex gap-2">
+            <input type="checkbox" class="check w-4">
+            <p class="task_name"></p>
+            </div>
+            <button id="delete_btn" class="text-sm"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="32" height="32"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+            </svg></button>
+        </div>
+    </div>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
